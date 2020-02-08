@@ -28,9 +28,9 @@ class Triangle{
   
   void show(){
     beginShape();
-    vertex(PVector.mult(a, noise(a.x/500,a.y/500,a.z/500+(float)frameCount/10)+0.5));
-    vertex(PVector.mult(b, noise(b.x/500,b.y/500,b.z/500+(float)frameCount/10)+0.5));
-    vertex(PVector.mult(c, noise(c.x/500,c.y/500,c.z/500+(float)frameCount/10)+0.5));
+    vertex(PVector.mult(a, noise((float)a.x/500,(float)a.y/500,(float)a.z/500+(float)frameCount/10)+0.5));
+    vertex(PVector.mult(b, noise((float)b.x/500,(float)b.y/500,(float)b.z/500+(float)frameCount/10)+0.5));
+    vertex(PVector.mult(c, noise((float)c.x/500,(float)c.y/500,(float)c.z/500+(float)frameCount/10)+0.5));
     endShape(CLOSE);
   }
 }
