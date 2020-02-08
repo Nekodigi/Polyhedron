@@ -5,18 +5,18 @@ class Icosahedron extends Polyhedron{
     float diagonal = sqrt((5+sqrt(5))/2);
     float phi = (1+sqrt(5))/2;
     float s = r/diagonal;
-    vertices[0] = new PVector(0, 1*s, phi*s);
-    vertices[1] = new PVector(0, -1*s, phi*s);
-    vertices[2] = new PVector(0, 1*s, -phi*s);
-    vertices[3] = new PVector(0, -1*s, -phi*s);
-    vertices[4] = new PVector(1*s, phi*s, 0);
-    vertices[5] = new PVector(-1*s, phi*s, 0);
-    vertices[6] = new PVector(1*s, -phi*s, 0);
-    vertices[7] = new PVector(-1*s, -phi*s, 0);
-    vertices[8] = new PVector(phi*s, 0, 1*s);
-    vertices[9] = new PVector(phi*s, 0, -1*s);
-    vertices[10] = new PVector(-phi*s, 0, 1*s);
-    vertices[11] = new PVector(-phi*s, 0, -1*s);
+    vertices[0] = new PVector(0, s, phi*s);
+    vertices[1] = new PVector(0, -s, phi*s);
+    vertices[2] = new PVector(0, s, -phi*s);
+    vertices[3] = new PVector(0, -s, -phi*s);
+    vertices[4] = new PVector(s, phi*s, 0);
+    vertices[5] = new PVector(-s, phi*s, 0);
+    vertices[6] = new PVector(s, -phi*s, 0);
+    vertices[7] = new PVector(-s, -phi*s, 0);
+    vertices[8] = new PVector(phi*s, 0, s);
+    vertices[9] = new PVector(phi*s, 0, -s);
+    vertices[10] = new PVector(-phi*s, 0, s);
+    vertices[11] = new PVector(-phi*s, 0, -s);
   }
   
   void show(){

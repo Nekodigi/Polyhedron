@@ -8,7 +8,7 @@ Icosahedron icosahedron = new Icosahedron(r);
 
 void setup(){
   size(500, 500, P3D);
-  
+  //fullScreen(P3D);
 }
 
 void draw(){
